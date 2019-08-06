@@ -1,0 +1,109 @@
+.promo {
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 118px;
+    padding-right: 118px;
+    padding-bottom: 529px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 51px;
+    padding-left: 190px;
+    padding-bottom: 266px;
+  }
+}
+
+.promo__wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.promo__text-wrapper {
+  padding-bottom: 168px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 133px;
+  background-color: $color-main;
+  color: $white;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    color: $gray-darken;
+    background-image: none;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: none;
+  }
+}
+
+.promo__title {
+  margin: 0;
+  padding-top: 28px;
+  font-size: $font-size-xxl;
+  font-weight: 400;
+  line-height: 1em;
+
+  @media (min-width: $tablet-width) {
+    width: 420px;
+    padding-top: 55px;
+    font-size: $font-size-xxxl;
+    line-height: 1em;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 425px;
+  }
+}
+
+.promo__slogan {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  line-height: 1em;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 41px;
+    margin-bottom: 47px;
+    font-size: $font-size-l;
+    line-height: 1em;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 42px;
+    margin-bottom: 52px;
+  }
+}
+
+.promo__link {
+  display: block;
+  padding: 12px 20px;
+  text-align: center;
+  color: $white;
+  line-height: 1.286em;
+  background-color: $color-main;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    padding: 17px 10px;
+    font-size: $font-size-l;
+    line-height: 1em;
+  }
+}
+

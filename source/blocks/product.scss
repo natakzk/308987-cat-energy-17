@@ -1,0 +1,123 @@
+.product {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+
+  border-bottom: $border;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    min-height: 431px;
+    border: none;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 40px;
+    margin-bottom: 140px;
+    background-color: $gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 142px;
+  }
+}
+
+.product__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 375px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.product__img-wrapper {
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    position: absolute;
+    bottom: 302px;
+  }
+}
+
+.product__info {
+  width: 140px;
+  padding-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.product__title {
+  margin-top: 0;
+  margin-bottom: 13px;
+  width: 80px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25em;
+  color: #444444;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 137px;
+    padding-bottom: 19px;
+    font-size: $font-size-l;
+    line-height: 1;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.product__properties {
+  width: 100%;
+  font-size: $font-size-xs;
+  border-spacing: inherit;
+  line-height: 1.34em;
+  font-family: $font-family-additional;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 33px;
+    font-size: $font-size-sm;
+    line-height: 1;
+  }
+}
+
+.product__value-row {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7px;
+    padding-top: 8px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.product__property-value {
+  text-align: right;
+}
+
+.product__button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 8px 0;
+  color: $white;
+  font-size: $font-size-sm;
+  line-height: 1.25em;
+  background-color: $color-main;
+  max-width: 355px;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
+  }
+}
